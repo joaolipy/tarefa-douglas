@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.local)",
+      "Read(./.env.production)",
+      "Read(./backend/.env)",
+      "Read(./frontend/.env)",
+      "Read(./**/.env)",
+      "Edit(./**/.env)",
+      "Write(./**/.env)",
+      "Read(./**/*.pem)",
+      "Read(./**/*.key)",
+      "Bash(cat *.env)",
+      "Bash(cat **/.env)",
+      "Bash(type *.env)",
+      "Bash(more *.env)",
+      "Bash(head *.env)",
+      "Bash(tail *.env)",
+      "Bash(grep * .env)",
+      "Bash(printenv*)",
+      "Bash(env)",
+      "Bash(rm -rf *)",
+      "Bash(git push*)",
+      "Bash(git reset --hard*)",
+      "Read(./.env.*)",
+      "Bash(docker compose config*)",
+      "Bash(docker-compose config*)",
+      "Bash(docker inspect*)",
+      "Bash(docker compose exec * env*)",
+      "Bash(docker compose down -v*)",
+      "Bash(docker volume rm*)",
+      "Bash(docker system prune*)"
+    ]
+  }
+}
